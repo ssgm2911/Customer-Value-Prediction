@@ -63,10 +63,15 @@ Variable objetivo:
 ## 🧪 Metodología
 
 1️⃣ Limpieza y preparación de datos
+
 2️⃣ Feature engineering a nivel cliente
+
 3️⃣ Definición de la variable objetivo
+
 4️⃣ División entrenamiento / prueba
+
 5️⃣ Entrenamiento del modelo
+
 6️⃣ Evaluación e interpretación de resultados
 
 ## 🤖 Modelo de Machine Learning
@@ -111,23 +116,29 @@ El modelo permite identificar clientes con alta probabilidad de generar mayores 
 
 ## 📂 Estructura del proyecto
 
-Customer-Value-ML/
-│
-├── data/
-│   ├── raw/
-│   │   └── ventas.csv
-│   └── processed/
-│       └── clientes_features.csv
-│
-├── notebooks/
-│   ├── 01_preparacion_datos.ipynb
-│   ├── 02_modelo_clasificacion.ipynb
-│
-├── models/
-│   └── modelo_cliente_valor.pkl
-│
-├── requirements.txt
-└── README.md
+data/
+
+    raw/
+
+        ventas.csv
+
+    processed/
+
+        clientes_features.csv
+
+notebooks/
+    
+        01_preparacion_datos.ipynb
+
+        02_modelo_clasificacion.ipynb
+
+models/
+
+        modelo_cliente_valor.pkl
+
+requirements.txt
+
+README.md
 
 ## 🚀 Próximos pasos
 
@@ -139,4 +150,6 @@ Customer-Value-ML/
 
 - Integrar el modelo en un dashboard de seguimiento
 
-📌 Autor: Silvio Guillén
+## 📌 Autor
+
+Silvio Guillén
