@@ -1,11 +1,11 @@
 # Customer-Value-Prediction
-📌 Objetivo del proyecto
+## 📌 Objetivo del proyecto
 
 Desarrollar un modelo de Machine Learning que permita identificar clientes de alto valor, con el fin de apoyar decisiones de segmentación, retención y optimización de campañas comerciales.
 
 El proyecto demuestra cómo un modelo sencillo puede generar impacto real en el negocio, priorizando clientes con mayor probabilidad de generar ingresos.
 
-🧠 Problema de negocio
+## 🧠 Problema de negocio
 
 Las empresas no pueden invertir el mismo presupuesto en todos los clientes.
 Este proyecto busca responder la pregunta:
@@ -20,7 +20,7 @@ La solución permite:
 
 - Optimizar el uso del presupuesto comercial
 
-📊 Dataset
+## 📊 Dataset
 
 El dataset proviene de transacciones de ventas retail y fue agregado a nivel cliente para el entrenamiento del modelo.
 
@@ -46,7 +46,7 @@ Variable objetivo:
 
     0 → Resto de clientes
 
-⚙️ Tecnologías y herramientas
+## ⚙️ Tecnologías y herramientas
 
 - Python
 
@@ -60,7 +60,7 @@ Variable objetivo:
 
 - Git & GitHub
 
-🧪 Metodología
+## 🧪 Metodología
 
 1️⃣ Limpieza y preparación de datos
 2️⃣ Feature engineering a nivel cliente
@@ -69,7 +69,7 @@ Variable objetivo:
 5️⃣ Entrenamiento del modelo
 6️⃣ Evaluación e interpretación de resultados
 
-🤖 Modelo de Machine Learning
+## 🤖 Modelo de Machine Learning
 
 - Tipo: Clasificación supervisada
 
@@ -83,7 +83,7 @@ Variable objetivo:
 
     Robustez ante outliers
 
-📈 Métricas de evaluación
+## 📈 Métricas de evaluación
 
 El modelo fue evaluado utilizando:
 
@@ -97,7 +97,7 @@ El modelo fue evaluado utilizando:
 
 📌 El enfoque principal está en la interpretación del modelo y su utilidad para el negocio, más que en maximizar métricas.
 
-🧠 Interpretación de negocio
+## 🧠 Interpretación de negocio
 
 El modelo permite identificar clientes con alta probabilidad de generar mayores ingresos, lo que facilita:
 
@@ -109,7 +109,7 @@ El modelo permite identificar clientes con alta probabilidad de generar mayores 
 
 - Mejorar el retorno de inversión (ROI)
 
-📂 Estructura del proyecto
+## 📂 Estructura del proyecto
 
 Customer-Value-ML/
 │
@@ -129,7 +129,7 @@ Customer-Value-ML/
 ├── requirements.txt
 └── README.md
 
-🚀 Próximos pasos
+## 🚀 Próximos pasos
 
 - Probar otros modelos de clasificación
 
