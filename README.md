@@ -14,8 +14,34 @@ Este proyecto busca responder la pregunta:
 
 La solución permite:
 
-Priorizar campañas de marketing
+- Priorizar campañas de marketing
 
-Mejorar estrategias de retención
+- Mejorar estrategias de retención
 
-Optimizar el uso del presupuesto comercial
+- Optimizar el uso del presupuesto comercial
+
+📊 Dataset
+
+El dataset proviene de transacciones de ventas retail y fue agregado a nivel cliente para el entrenamiento del modelo.
+
+Variables utilizadas:
+
+- Edad promedio del cliente
+
+- Género
+
+- Total de compras
+
+- Cantidad total de productos comprados
+
+- Gasto total
+
+- Ticket promedio
+
+Variable objetivo:
+
+- cliente_alto_valor (binaria)
+
+    1 → Cliente con gasto total dentro del top 30%
+
+    0 → Resto de clientes
