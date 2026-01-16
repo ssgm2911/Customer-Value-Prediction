@@ -49,13 +49,13 @@ data/
 
 notebooks/
     
-        01_preparacion_datos.ipynb
+    01_preparacion_datos.ipynb
 
-        02_modelo_clasificacion.ipynb
+    02_modelo_clasificacion.ipynb
 
 models/
 
-        modelo_logistic_regression.pkl
+    modelo_logistic_regression.pkl
 
 requirements.txt
 
