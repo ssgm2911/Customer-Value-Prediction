@@ -1,130 +1,51 @@
-# Customer-Value-Prediction
+# Customer-Value-Prediction – Retail Sales
 ## 📌 Objetivo del proyecto
 
-Desarrollar un modelo de Machine Learning que permita identificar clientes de alto valor, con el fin de apoyar decisiones de segmentación, retención y optimización de campañas comerciales.
+Este proyecto tiene como objetivo analizar el comportamiento de compra de clientes y clasificar su nivel de gasto utilizando técnicas de análisis de datos y machine learning, a partir de un dataset de ventas retail.
 
-El proyecto demuestra cómo un modelo sencillo puede generar impacto real en el negocio, priorizando clientes con mayor probabilidad de generar ingresos.
+El proyecto cubre todo el flujo de un proyecto de ciencia de datos:
 
-## 🧠 Problema de negocio
+- Preparación y limpieza de datos
 
-Las empresas no pueden invertir el mismo presupuesto en todos los clientes.
-Este proyecto busca responder la pregunta:
+- Definición de una variable objetivo con sentido de negocio
 
-¿Podemos identificar clientes con alta probabilidad de generar mayores ingresos a partir de su historial de compras?
+- Entrenamiento y comparación de modelos de Machine Learning
 
-La solución permite:
+- Evaluación de métricas y toma de decisiones basada en datos
 
-- Priorizar campañas de marketing
+- Exportación del modelo final para reutilización
 
-- Mejorar estrategias de retención
+## 🎯 Objetivo de negocio
 
-- Optimizar el uso del presupuesto comercial
+Segmentar a los clientes según su nivel de gasto (Bajo, Medio, Alto) para:
+
+- Apoyar estrategias de marketing segmentado
+
+- Identificar clientes de mayor valor
+
+- Facilitar la toma de decisiones comerciales basada en datos
 
 ## 📊 Dataset
 
-El dataset proviene de transacciones de ventas retail y fue agregado a nivel cliente para el entrenamiento del modelo.
+Fuente: Customer Shopping Dataset – Retail Sales Data (Kaggle)
 
-Variables utilizadas:
+Principales variables:
 
-- Edad promedio del cliente
+- Demográficas: edad, género
 
-- Género
+- Transaccionales: categoría de producto, cantidad, precio
 
-- Total de compras
+- Operativas: método de pago, centro comercial
 
-- Cantidad total de productos comprados
-
-- Gasto total
-
-- Ticket promedio
-
-Variable objetivo:
-
-- cliente_alto_valor (binaria)
-
-    1 → Cliente con gasto total dentro del top 30%
-
-    0 → Resto de clientes
-
-## ⚙️ Tecnologías y herramientas
-
-- Python
-
-- pandas, numpy
-
-- scikit-learn
-
-- matplotlib, seaborn
-
-- Jupyter Notebook
-
-- Git & GitHub
-
-## 🧪 Metodología
-
-1️⃣ Limpieza y preparación de datos
-
-2️⃣ Feature engineering a nivel cliente
-
-3️⃣ Definición de la variable objetivo
-
-4️⃣ División entrenamiento / prueba
-
-5️⃣ Entrenamiento del modelo
-
-6️⃣ Evaluación e interpretación de resultados
-
-## 🤖 Modelo de Machine Learning
-
-- Tipo: Clasificación supervisada
-
-- Modelo utilizado: Random Forest Classifier
-
-- Motivo de elección:
-
-    Buen desempeño con datos tabulares
-
-    Fácil interpretación de importancia de variables
-
-    Robustez ante outliers
-
-## 📈 Métricas de evaluación
-
-El modelo fue evaluado utilizando:
-
-- Accuracy
-
-- Precision
-
-- Recall
-
-- Matriz de confusión
-
-📌 El enfoque principal está en la interpretación del modelo y su utilidad para el negocio, más que en maximizar métricas.
-
-## 🧠 Interpretación de negocio
-
-El modelo permite identificar clientes con alta probabilidad de generar mayores ingresos, lo que facilita:
-
-- Enfocar campañas de fidelización
-
-- Diseñar promociones personalizadas
-
-- Reducir costos en campañas poco efectivas
-
-- Mejorar el retorno de inversión (ROI)
+- Temporal: fecha de compra
 
 ## 📂 Estructura del proyecto
 
 data/
 
-    raw/
+    raw/ # Datos originales
 
-        ventas.csv
-
-    processed/
-
-        clientes_features.csv
+    processed/ # Dataset limpio para modelado
 
 notebooks/
     
@@ -134,21 +55,63 @@ notebooks/
 
 models/
 
-        modelo_cliente_valor.pkl
+        modelo_logistic_regression.pkl
 
 requirements.txt
 
 README.md
 
-## 🚀 Próximos pasos
+## 📘 Notebooks
+🔹 Notebook 1 – Preparación de Datos
 
-- Probar otros modelos de clasificación
+- Exploración y limpieza del dataset
 
-- Ajustar el umbral de clasificación según objetivos de negocio
+- Construcción del gasto total del cliente
 
-- Analizar la evolución del valor del cliente en el tiempo
+- Definición de la variable objetivo Nivel_Gasto
 
-- Integrar el modelo en un dashboard de seguimiento
+- Exportación del dataset final listo para ML
+
+📌 Resultado: dataset limpio, consistente y alineado con objetivos de negocio.
+
+🔹 Notebook 2 – Modelado de Machine Learning
+
+- Entrenamiento y evaluación de múltiples modelos:
+
+    Logistic Regression
+
+    Random Forest
+
+- Comparación de métricas (accuracy)
+
+- Evaluación del impacto del Feature Engineering
+
+- Selección del modelo final basada en desempeño y simplicidad
+
+📌 Modelo final seleccionado:
+👉 Logistic Regression, por ofrecer el mejor balance entre desempeño (~0.72 accuracy) e interpretabilidad.
+
+## 📊 Resultados Clave
+
+- El dataset presenta clases balanceadas, permitiendo usar accuracy como métrica principal.
+
+- Modelos más complejos no superaron al modelo lineal, lo que evidencia que:
+
+    La información disponible limita el desempeño predictivo.
+
+    La complejidad del modelo no siempre implica mejores resultados.
+
+    El Feature Engineering fue evaluado empíricamente y descartado cuando degradó el desempeño.
+
+## 🛠️ Instalación y Uso
+
+pip install -r requirements.txt
+
+Ejecutar los notebooks en orden:
+
+1. 01_preparacion_datos.ipynb
+
+2. 02_modelado_ml.ipynb
 
 ## 📌 Autor
 
